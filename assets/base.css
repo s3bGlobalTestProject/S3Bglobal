@@ -1848,9 +1848,8 @@ input[type='checkbox'] {
 
 /* Main Header Layout */
 .header-wrapper {
-/*   display: block; */
-  position: fixed;
-  width:100%;													{%comment%}  Rajat Sharma  {%endcomment%}
+  display: block;
+  position: relative;													{%comment%}  Rajat Sharma  {%endcomment%}
   background-color: rgb(var(--color-background));
 }
   
