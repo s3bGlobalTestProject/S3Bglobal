@@ -1835,9 +1835,10 @@ input[type='checkbox'] {
 
 .shopify-section-header-sticky {
 /*   position: sticky; */
+  position:fixed;
   top: 0;
   width:100%;   									{%comment%}  rajat Sharma {%endcomment%}
-  position:fixed;									{%comment%}  rajat Sharma {%endcomment%}
+  									{%comment%}  rajat Sharma {%endcomment%}
 }
 
 .shopify-section-header-hidden {
