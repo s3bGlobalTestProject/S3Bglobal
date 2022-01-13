@@ -12,11 +12,6 @@
   --gradient-background: var(--gradient-base-background-2);
 }
 
-.color-background-3 {
-  --color-background: var(--color-base-background-3);
-  --gradient-background: var(--gradient-base-background-3);
-}
-
 .color-inverse {
   --color-foreground: var(--color-base-background-1);
   --color-background: var(--color-base-text);
