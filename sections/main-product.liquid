@@ -121,9 +121,7 @@
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                {{ product.description }}
-                
-                {% comment %}
+                  {% comment %}
         		mudita 
         		13/01/2022
         		start
@@ -134,6 +132,9 @@
         	{% endcomment %} 
                 
                 
+                {{ product.description }}
+                
+              
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
