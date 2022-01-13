@@ -89,6 +89,11 @@
         "id": "colors_background_3",
         "default": "#96CEB4",
         "label": "t:settings_schema.colors.settings.colors_background_3.label"
+      },
+      {
+        "id": "gradient_background_3",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_background_3.label"
       }
     ]
   },
