@@ -128,10 +128,12 @@
         		13/01/2022
         		start
         	{% endcomment %} 
-                 <p> {{ product.productType | escape }} </p>
+                 <p> {{ productType | escape }} </p>
                 {% comment %}
         		end 13/01/2022
         	{% endcomment %} 
+                
+                
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
