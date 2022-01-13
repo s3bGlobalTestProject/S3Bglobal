@@ -1853,6 +1853,10 @@ input[type='checkbox'] {
   width:100%;													{%comment%}  Rajat Sharma  {%endcomment%}
   background-color: rgb(var(--color-background));
 }
+  
+body{
+  padding-top:100px;
+}
 
 .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
