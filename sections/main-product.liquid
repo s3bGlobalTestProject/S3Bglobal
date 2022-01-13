@@ -121,20 +121,19 @@
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                  {% comment %}
+                {{ product.description }}
+                
+                {% comment %}
         		mudita 
         		13/01/2022
         		start
         	{% endcomment %} 
-                 <p> {{ product.avaliableForSale | escape }} </p>
+                 <p> {{ product.variant.quantity | escape }} </p>
                 {% comment %}
         		end 13/01/2022
         	{% endcomment %} 
                 
                 
-                {{ product.description }}
-                
-              
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}

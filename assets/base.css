@@ -1835,8 +1835,6 @@ input[type='checkbox'] {
 
 .shopify-section-header-sticky {
   position: sticky;
-  										{%comment%}  Rajat Sharma  {%endcomment%}
-  width:100%;
   top: 0;
 }
 
@@ -1852,7 +1850,7 @@ input[type='checkbox'] {
 .header-wrapper {
 /*   display: block; */
   position: fixed;
-  width:100%;
+  width:100%;													{%comment%}  Rajat Sharma  {%endcomment%}
   background-color: rgb(var(--color-background));
 }
 
