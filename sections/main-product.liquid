@@ -84,11 +84,14 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
-        
-        	// Sameer Sinha
-        	// start
+			{% comment %}
+        		Sameer Sinha
+        		start
+        	{% endcomment %}
         	<p> {{ product.metafield.my_fields.part_number | escape }} </p>
-        	//  end
+			{% comment %}
+        		end
+        	{% endcomment %}
         
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
