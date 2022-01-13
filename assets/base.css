@@ -1849,7 +1849,7 @@ input[type='checkbox'] {
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: relative;													{%comment%}  Rajat Sharma  {%endcomment%}
+  position: relative;													
   background-color: rgb(var(--color-background));
 }
   
