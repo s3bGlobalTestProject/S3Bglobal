@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "2.4.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -17,7 +17,7 @@
       {
         "type": "color",
         "id": "colors_solid_button_labels",
-        "default": "#FFFFFF",
+        "default": "#0000FF",
         "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
         "info": "t:settings_schema.colors.settings.colors_solid_button_labels.info"
       },
@@ -83,6 +83,17 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_3",
+        "default": "#96CEB4",
+        "label": "t:settings_schema.colors.settings.colors_background_3.label"
+      },
+      {
+        "id": "gradient_background_3",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_background_3.label"
       }
     ]
   },
