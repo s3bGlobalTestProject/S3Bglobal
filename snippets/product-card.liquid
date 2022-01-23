@@ -29,8 +29,9 @@
           <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
             {{ product_card_product.title | escape }}
           </a>
-          <span class="shopify-product-reviews-badge" data-id="{{product.id}}"></span>
+         
         </h3>
+       <span class="shopify-product-reviews-badge" data-id="{{product.id}}"></span>
       {%- endif -%}
 
       {% comment %} TODO: metafield {% endcomment %}
