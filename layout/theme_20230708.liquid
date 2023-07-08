@@ -169,13 +169,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  <!-- subify Snippet Start -->
-{% if content_for_header contains 'https:\/\/app-subify.shopgram.app\/subify-script-tag-for-snippet.js' %} 
-
-                {% render 'subify-snippet' %}
-        
-{% endif %}
-<!-- subify Snippet End -->
-
-</body>
+  </body>
 </html>

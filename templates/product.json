@@ -54,6 +54,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "Subify_Widget_Block": {
+          "type": "shopify:\/\/apps\/subify-subscriptions-app\/blocks\/app-block\/bc0dba25-cd46-4841-bea4-6bdfe9ac815f",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -63,6 +68,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "Subify_Widget_Block",
         "buy_buttons",
         "description",
         "share"
