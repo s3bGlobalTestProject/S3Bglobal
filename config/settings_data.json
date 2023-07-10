@@ -2,11 +2,14 @@
   "current": {
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
-    "colors_accent_2": "#274ac6",
+    "colors_accent_2": "#70cfd9",
+    "gradient_accent_2": "linear-gradient(190deg, rgba(114, 206, 255, 1) 81%, rgba(255, 250, 99, 1) 96%)",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
+    "colors_background_3": "#48dd98",
+    "gradient_background_3": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "favicon": "shopify:\/\/shop_images\/bag_7beb2456-1b87-4b0a-839d-e2e393418e1c.png",
@@ -33,7 +36,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "logo": "shopify:\/\/shop_images\/bag_7beb2456-1b87-4b0a-839d-e2e393418e1c.png",
           "logo_width": 70,
           "logo_position": "middle-left",
