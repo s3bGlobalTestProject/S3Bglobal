@@ -11,12 +11,6 @@
   SubifyConfig.isHomePage = SubifyConfig.templateName === 'index';
   SubifyConfig.isCollectionPage = SubifyConfig.templateName === 'collection';
   SubifyConfig.isLandingPage = SubifyConfig.templateName === 'page';
-  moneyFormatConfig = {};
-  moneyFormatConfig.money_format = "{{ shop.money_format }}";
-  moneyFormatConfig.money_with_currency_format = "{{ shop.money_with_currency_format }}";
-  moneyFormatConfig.sample_fromatted_money = " {{ 123456 | money }}";
-  moneyFormatConfig.sample_formatted_money_with_currency = " {{ 123456 | money_with_currency }}";
-  SubifyConfig.moneyFormatConfig = moneyFormatConfig;
 
   {% if customer %}
   SubifyConfig.customerToken = "{{ subifyCustomerToken }}";
