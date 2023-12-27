@@ -1,0 +1,44 @@
+{% assign subifySecret = "laksdjfoqiwe!@#$@#$AFsdfasdkjfasdlfjk!@#!@#@#edklajdalskjdfaskdjl" %}
+{% assign subifyCustomerID = customer.id %}
+{% assign subifyCustomerToken = subifyCustomerID | hmac_sha256: subifySecret %}
+
+
+<script id="Subify-config">
+  var SubifyConfig = window.SubifyConfig || {};
+
+  SubifyConfig.sdkUrl = "https://cdn.hengam.io/subify/subify-sdk.js";
+  SubifyConfig.templateName = {{ template.name | json }};
+  SubifyConfig.isHomePage = SubifyConfig.templateName === 'index';
+  SubifyConfig.isCollectionPage = SubifyConfig.templateName === 'collection';
+  SubifyConfig.isLandingPage = SubifyConfig.templateName === 'page';
+  moneyFormatConfig = {};
+  moneyFormatConfig.money_format = "{{ shop.money_format | url_escape }}";
+  moneyFormatConfig.money_with_currency_format = "{{ shop.money_with_currency_format | url_escape }}";
+  moneyFormatConfig.sample_fromatted_money = "{{ 123456 | money | url_escape }}";
+  moneyFormatConfig.sample_formatted_money_with_currency = "{{ 123456 | money_with_currency | url_escape }}";
+  SubifyConfig.moneyFormatConfig = moneyFormatConfig;
+
+  {% if customer %}
+  SubifyConfig.customerToken = "{{ subifyCustomerToken }}";
+  SubifyConfig.customerId = {{ customer.id }};
+  {% endif %}
+
+  function createSubifySdkScript() {
+      const subifySdkScript = document.createElement('script');
+      subifySdkScript.setAttribute('defer', 'defer');
+      subifySdkScript.src = SubifyConfig.sdkUrl;
+      document.body.appendChild(subifySdkScript);
+  }
+
+
+  if (!SubifyConfig.isHomePage && !SubifyConfig.isCollectionPage && !SubifyConfig.isLandingPage){
+      SubifyConfig.product = {{ product | json }};
+      {% for variant in product.variants %}
+        var selling_plans = SubifyConfig.product.variants[{% increment base %}].selling_plans = [];
+        {% for selling_plan_allocation in variant.selling_plan_allocations %}
+            selling_plans.push({{ selling_plan_allocation.selling_plan | json }});
+        {% endfor %}
+      {% endfor %}
+      createSubifySdkScript();
+  }
+</script>
