@@ -80,7 +80,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "15588394620387169604": {
+        "type": "shopify:\/\/apps\/subify-subscriptions-app\/blocks\/app-embed-block\/bc0dba25-cd46-4841-bea4-6bdfe9ac815f",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
